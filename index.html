@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alrazi Refill Cash Patients System</title>
+    <title>Rass 5 Refill Cash Patients System</title>
     <link rel="icon" href="logo.png" type="image/png">
     <style>
         :root {
@@ -129,7 +129,7 @@
     <div class="container">
         <div class="header-container">
             <img src="logo.png" alt="Alrazi Pharmacy" class="logo-img" onerror="this.style.display='none'"> 
-            <h1>Alrazi Refill Cash Patients System</h1>
+            <h1>Rass 5 Refill Cash Patients System</h1>
         </div>
         
         <div class="tabs">
@@ -251,7 +251,7 @@
     </div>
 
 <script>
-const API = 'https://script.google.com/macros/s/AKfycbxttAQK6oEqdmqekXHto2_tBIkTVAmcwNA8rrHQkEcabwVayNwPSIc19zp68D9UG22POw/exec';
+const API = 'https://script.google.com/macros/s/AKfycbyLVO79BGJ77JRp_VXidIKF61LSz-J1bR1OKy6UvIdWO-1bSpoyFHtXX1WgxTXezHC6/exec';
 let patients = [];
 let editId = null;
 
@@ -399,7 +399,7 @@ async function delP(id) {
 function sendWA(id) {
     const p = patients.find(x => x.id === id);
     const msg = `السلام عليكم ورحمة الله وبركاته
-صيدلية الرازي الرس 1 ترحب بكم
+صيدلية الرازي الرس 5 ترحب بكم
 
 هذا تذكير بموعد صرف الدواء الخاص بك:
 
@@ -412,7 +412,7 @@ function sendWA(id) {
 - التوصيل لموقعكم
 
 موقع الصيدلية:
-https://shorturl.at/M2Cq3
+https://maps.app.goo.gl/QPvDTAaDZ8rs6YwK9
 
 نتمنى لكم دوام الصحة والعافية`;
     window.open('https://wa.me/' + p.phone + '?text=' + encodeURIComponent(msg), '_blank');
